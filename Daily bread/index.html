@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Verse by Emotion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Find a Bible Verse for How You Feel</h1>
+
+    <select id="emotion-select">
+      <option value="" disabled selected>-- Select an emotion --</option>
+      <option value="anxious">Anxious</option>
+      <option value="lonely">Lonely</option>
+      <option value="grateful">Grateful</option>
+      <option value="confused">Confused</option>
+      <option value="hopeful">Hopeful</option>
+      <option value="afraid">Afraid</option>
+      <option value="weak">Weak</option>
+      <option value="angry">Angry</option>
+      <option value="joyful">Joyful</option>
+      <option value="tired">Tired</option>
+    </select>
+
+    <button onclick="getVerseByEmotion()">Get Verse</button>
+
+    <div class="verse-box">
+      <p id="verse-text">Your verse will appear here...</p>
+      <p id="verse-reference"></p>
+    </div>
+    <p class="note">You’ll get a new verse for this emotion tomorrow ✨</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
